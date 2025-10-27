@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://sgombero-italy.com/</loc>
     <priority>1.0</priority>
   </url>
 
-  <!-- مثال على صفحة فرعية 1 -->
   <url>
     <loc>https://sgombero-italy.com/about</loc>
     <priority>0.8</priority>
   </url>
 
-  <!-- مثال على صفحة فرعية 2 -->
   <url>
     <loc>https://sgombero-italy.com/services</loc>
     <priority>0.8</priority>
   </url>
 
-  <!-- مثال على صفحة فرعية 3 -->
   <url>
     <loc>https://sgombero-italy.com/contact</loc>
     <priority>0.7</priority>
