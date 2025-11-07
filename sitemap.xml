@@ -1,28 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <!-- Homepage -->
   <url>
     <loc>https://sgombero-italy.com/</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- About page -->
+  <!-- Main Pages -->
   <url>
     <loc>https://sgombero-italy.com/about</loc>
     <priority>0.8</priority>
   </url>
 
-  <!-- Services page -->
   <url>
     <loc>https://sgombero-italy.com/services</loc>
     <priority>0.8</priority>
   </url>
 
-  <!-- Contact page -->
   <url>
     <loc>https://sgombero-italy.com/contact</loc>
     <priority>0.7</priority>
   </url>
+
+  <!-- City Landing Pages for Local SEO -->
+  <url><loc>https://sgombero-italy.com/milano</loc><priority>0.9</priority></url>
+  <url><loc>https://sgombero-italy.com/roma</loc><priority>0.9</priority></url>
+  <url><loc>https://sgombero-italy.com/torino</loc><priority>0.9</priority></url>
+  <url><loc>https://sgombero-italy.com/napoli</loc><priority>0.9</priority></url>
+  <url><loc>https://sgombero-italy.com/firenze</loc><priority>0.9</priority></url>
+  <url><loc>https://sgombero-italy.com/bologna</loc><priority>0.9</priority></url>
+  <url><loc>https://sgombero-italy.com/verona</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/genova</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/palermo</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/venezia</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/bari</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/catania</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/padova</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/parma</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/bergamo</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/modena</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/brescia</loc><priority>0.8</priority></url>
+  <url><loc>https://sgombero-italy.com/reggio-calabria</loc><priority>0.7</priority></url>
+  <url><loc>https://sgombero-italy.com/pisa</loc><priority>0.7</priority></url>
+  <url><loc>https://sgombero-italy.com/livorno</loc><priority>0.7</priority></url>
 
 </urlset>
