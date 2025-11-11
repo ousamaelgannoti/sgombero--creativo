@@ -85,6 +85,123 @@ nav a:hover{text-decoration:underline}
 .testimonial-card{max-width:400px;margin:20px auto;background:#fff5ee;padding:20px;border-radius:15px;box-shadow:0 6px 15px rgba(0,0,0,.1)}
 .testimonial-card p{font-style:italic}
 .testimonial-card h4{margin-top:10px;font-weight:bold}
+.google-reviews-section {
+    padding: 50px 20px;
+    background: #fff; 
+    text-align: center;
+}
+.google-reviews-section h2 {
+    margin-bottom: 30px;
+    color: #333; 
+}
+.reviews-container {
+    max-width: 500px; 
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    position: relative;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    background: white;
+}
+.review-card {
+    padding: 20px;
+    text-align: left;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.review-card.active {
+    display: block;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e0e0e0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px; 
+}
+
+.reviewer-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #888;
+}
+
+.stars {
+    color: gold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.review-text {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.read-more {
+    color: #0066cc; 
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.nav-btn {
+    background: linear-gradient(135deg, #ff4500, #ff7f50);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease; 
+}
+.nav-btn:hover {
+    background: linear-gradient(135deg, #e03d00, #e07047); /* Darker gradient on hover */
+}
+.google-logo {
+    width: 30px;
+    height: auto;
+    opacity: 0.8; 
+}
 .faq{padding:50px 20px;background:#ffefd5}
 .faq h3{cursor:pointer;margin-bottom:10px;background:#fff5ee;padding:15px;border-radius:10px;transition:.3s}
 .faq h3:hover{background:#ffd6b3}
@@ -105,18 +222,19 @@ footer a{color:white;text-decoration:underline}
 @media (max-width: 600px) {
   .hero-content h1 { font-size: 32px; }
   .hero-content p { font-size: 16px; }
+  .reviews-container { max-width: 90%; padding: 20px; } /* Responsive width */
 }
 .faq p { display: none; }
 </style>
    <link rel="icon" href="favicon.png" type="image/png">
    <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org  ",
   "@type": "LocalBusiness",
   "name": "Sgombero Creativo",
-  "image": "https://sgombero-italy.com/logo.png",
-  "@id": "https://sgombero-italy.com",
-  "url": "https://sgombero-italy.com",
+  "image": "https://sgombero-italy.com/logo.png  ",
+  "@id": "https://sgombero-italy.com  ",
+  "url": "https://sgombero-italy.com  ",
   "telephone": "+39 379 3236436",
   "email": "ousamaelgannoti@gmail.com",
   "address": {
@@ -128,19 +246,18 @@ footer a{color:white;text-decoration:underline}
   "description": "Servizi di sgombero casa e ufficio, riciclaggio e smaltimento eco-friendly a Milano e in tutta Italia.",
   "openingHours": "Mo-Sa 08:00-20:00",
   "sameAs": [
-    "https://www.facebook.com/sgomberoitaly",
-    "https://www.instagram.com/sgomberoitaly"
+    "https://www.facebook.com/sgomberoitaly  ",
+    "https://www.instagram.com/sgomberoitaly  "
   ]
 }
 </script>
    <meta property="og:title" content="Sgombero Creativo - Sgombero Casa e Ufficio in Italia">
 <meta property="og:description" content="Servizi rapidi e professionali di sgombero casa, ufficio e locali in tutta Italia.">
-<meta property="og:image" content="https://sgombero-italy.com/logo.png">
-<meta property="og:url" content="https://sgombero-italy.com">
+<meta property="og:image" content="https://sgombero-italy.com/logo.png  ">
+<meta property="og:url" content="https://sgombero-italy.com  ">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-
 <header>
     <img src="Elg.png" alt="Logo Sgombero">
     <h1>SGOMBERO CREATIVO</h1>
@@ -149,30 +266,29 @@ footer a{color:white;text-decoration:underline}
         <a href="#services">Servizi</a>
         <a href="#before-after">Prima & Dopo</a>
         <a href="#testimonials">Recensioni</a>
+        <a href="#google-reviews">Recensioni Google</a> <!-- Added link to new section -->
         <a href="#faq">FAQ</a>
         <a href="#contact">Contatti</a>
     </nav>
 </header>
-
 <div class="slider">
     <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1581091215363-56f7c574f0c5?auto=format&fit=crop&w=1950&q=80')"></div>
-    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1950&q=80')"></div>
-    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1593391920975-4f61f512fb32?auto=format&fit=crop&w=1950&q=80')"></div>
+    <div class="slide" style="background-image:url('  https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1950&q=80')"></div>
+    <div class="slide" style="background-image:url('  https://images.unsplash.com/photo-1593391920975-4f61f512fb32?auto=format&fit=crop&w=1950&q=80')"></div>
     <div class="hero-content">
         <h1>Facilitare lo Sgombero</h1>
         <p>Servizi rapidi, affidabili e professionali</p>
         <a href="#contact" class="button">Contattaci</a>
     </div>
 </div>
-
 <section id="features" class="features">
     <div class="feature-card">
-        <img src="https://img.icons8.com/ios-filled/100/ff6347/speed.png" alt="Velocità">
+        <img src="  https://img.icons8.com/ios-filled/100/ff6347/speed.png  " alt="Velocità">
         <h3>Velocità</h3>
         <p>Servizi rapidi per risparmiare tempo.</p>
     </div>
     <div class="feature-card">
-        <img src="https://img.icons8.com/ios-filled/100/ff6347/security-checked.png" alt="Sicurezza">
+        <img src="https://img.icons8.com/ios-filled/100/ff6347/security-checked.png  " alt="Sicurezza">
         <h3>Sicurezza</h3>
         <p>Gestione sicura degli oggetti.</p>
     </div>
@@ -182,7 +298,6 @@ footer a{color:white;text-decoration:underline}
         <p>Smaltimento e riciclaggio responsabile.</p>
     </div>
 </section>
-
 <section id="services" class="services">
     <div class="service-card">
         <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Sgombero Casa">
@@ -200,7 +315,6 @@ footer a{color:white;text-decoration:underline}
         <p>Smaltimento responsabile per proteggere l'ambiente.</p>
     </div>
 </section>
-
 <section id="before-after">
     <h2>Prima & Dopo</h2>
     <div class="before-after-container">
@@ -208,34 +322,66 @@ footer a{color:white;text-decoration:underline}
         <img src="1.webp" alt="Riciclaggio">
           <img src="3.jpeg" alt="Riciclaggio">
 </section>
-
-<section id="testimonials" class="testimonials">
-     <div class="testimonial-card">
-    <h4>- Marco R. </h4>
-    <p style="color: gold; font-size: 20px;">★★★★★</p>
-    <p>"Servizio rapido e affidabile! Hanno svuotato tutto in poche ore, ottimo lavoro!"</p>
-  </div>
-
-  <div class="testimonial-card">
-    <h4>- Lucia F. </h4>
-    <p style="color: gold; font-size: 20px;">★★★★★</p>
-    <p>"Professionali e puntuali. Lo consiglio assolutamente!"</p>
-  </div>
-
-  <div class="testimonial-card">
-    <h4>- Alessandro B. </h4>
-    <p style="color: gold; font-size: 20px;">★★★★★</p>
-    <p>"Prezzi onesti e servizio impeccabile. Pulizia perfetta dopo lo sgombero."</p>
-  </div>
-
-  <div class="testimonial-card">
-    <h4>- Giulia P. </h4>
-    <p style="color: gold; font-size: 20px;">★★★★★</p>
-    <p>"Ottimo team, gentili e super efficienti! Consigliato."</p>
-  </div>
-   
+<section id="google-reviews" class="google-reviews-section" style="color: #ffd6b3;">
+    <h2>Recensioni Google</h2>
+    <div class="reviews-container">
+      <div class="review-card active">
+        <div class="review-header">
+          <div class="reviewer-info">
+            <div class="avatar">r</div>
+            <div>
+              <div class="reviewer-name">roberto stacciai</div>
+              <div class="review-date">21/09/2025</div>
+            </div>
+          </div>
+          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
+        </div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">
+          Ho usufruito del servizio di trasloco e ritengo giusto effettuare un'ottima recensione. Preventivo dettagliato e...
+        </div>
+        <div class="read-more">Leggi di più</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-info">
+            <div class="avatar">d</div>
+            <div>
+              <div class="reviewer-name">Daniel Sconciolo</div>
+              <div class="review-date">20/09/2025</div>
+            </div>
+          </div>
+          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
+        </div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">
+          Visito spesso Pescioli, gentili e professionali! Non mi fanno scomberò con autoscala di una camera. Veloci e precisi nel servizio, un...
+        </div>
+        <div class="read-more">Leggi di più</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-info">
+            <div class="avatar">p</div>
+            <div>
+              <div class="reviewer-name">paolo barbara</div>
+              <div class="review-date">17/09/2025</div>
+            </div>
+          </div>
+          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
+        </div>
+        <div class="stars">★★★★★</div>
+        <div class="review-text">
+          NUMERI 1! E NON DICO ALTRO! BRAVI!
+        </div>
+        <div class="read-more">Leggi di più</div>
+      </div>
+      <div class="nav-buttons">
+        <button class="nav-btn" id="prevBtn">‹</button>
+        <button class="nav-btn" id="nextBtn">›</button>
+      </div>
+    </div>
 </section>
-
 <section id="faq" class="faq">
     <h2>Domande Frequenti</h2>
     <h3>Quali oggetti smaltite?</h3>
@@ -264,7 +410,7 @@ footer a{color:white;text-decoration:underline}
     <span>+39 379 3236436</span>
   </a>
 </div>
-   <div class="floating-buttons"> <a href="https://wa.me/393793236436" class="whatsapp">WhatsApp</a> <a href="tel:+393793236436" class="call">Chiama</a> </div>
+   <div class="floating-buttons"> <a href="  https://wa.me/393793236436  " class="whatsapp">WhatsApp</a> <a href="tel:+393793236436" class="call">Chiama</a> </div>
 <footer>
     <p> Sgombero Creativo. Tutti i diritti riservati.</p>
 </footer>
@@ -279,20 +425,27 @@ document.querySelectorAll('.faq h3').forEach(q=>{
   });
 });
 </script>
+
+<script>
+  const cards = document.querySelectorAll('.review-card');
+  let currentIndex = 0;
+
+  function showCard(index) {
+    cards.forEach((card, i) => {
+      card.classList.toggle('active', i === index);
+    });
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showCard(currentIndex);
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
+  });
+</script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
